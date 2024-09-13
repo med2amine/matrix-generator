@@ -1,0 +1,16 @@
+import random
+import string
+n = int(input('give the number of lines of this matrix'))
+m = int(input('give the number of colones of this matrix'))
+l = []
+b = string.digits
+for i in range(n):
+  p = []
+  for j in range(m):
+    k = random.choice(b)
+    p.append(k)
+  l.append(p)
+for i in l :
+  for j in i :
+    print(j,end=' ')
+  print( )
